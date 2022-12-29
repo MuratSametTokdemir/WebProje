@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model List<Filmler>
+<h1>Filmler</h1>
+<table class="table">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Year</th>
+                <th scope="col">DirectorName</th>
+                <th scope="col">Kategori</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Year</td>
+                    <td>@item.DirectorName</td>
+                    <td>@item.Kategori</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table class="table">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Yorum</th>
+                    <th scope="col">puan</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Yorum</td>
+                        <td>@item.Puan</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+

@@ -1,0 +1,31 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-image: url('ornek.jpg');
+    margin-bottom: 60px;
+    background-size: cover;
+}
+
+.flex-container {
+    display: flex;
+}
+
+    .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
