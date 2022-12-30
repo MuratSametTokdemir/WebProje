@@ -11,6 +11,8 @@ namespace WebProgramlamaOdev.Models
         }
 
         public DbSet<Filmler> Filmler { get; set; }
+        
+
 
 
     }
