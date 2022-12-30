@@ -1,0 +1,20 @@
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using System;
+using WebProgramlamaProjesi.Models;
+
+namespace WebProgramlamaProjesi.Models
+{
+    public class AppDbContext : IdentityDbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
+
+        public DbSet<UserEntity> UserEntity { get; set; }
+        public DbSet<Filmler> Filmler { get; set; }
+
+
+
+    }
+}
