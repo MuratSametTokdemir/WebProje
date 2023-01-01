@@ -13,6 +13,7 @@ namespace WebProgramlamaProjesi.Models
 
         public DbSet<UserEntity> UserEntity { get; set; }
         public DbSet<Filmler> Filmler { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
 
 
